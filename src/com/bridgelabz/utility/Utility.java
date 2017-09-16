@@ -395,4 +395,36 @@ public class Utility {
 		}
 		System.out.println("windspeed =" + windspeed + "\ntemperature =" + temp + "\nWind Chill=" + windchil);
 	}
-}// @@@@@@@@@@@@@@@@@@@@@@@@
+	/**
+	 * @param word String
+	 * @param start int
+	 * @param end int
+	 * <p> recursivelly itterates to give new conbination of word
+	 */
+	public static void permute(String word, int start, int end) {
+		if (start == end) {
+			System.out.println(word);
+		} else {
+			for (int i = start; i <= end; i++) {
+				word = swap(word, start, i);
+				permute(word, start + 1, end);
+				
+			}
+		}
+	}
+
+	/**
+	 * @param word string
+	 * @param a int
+	 * @param b int
+	 * @return String
+	 * <p>takes word ,start length ,end length
+	 */
+	public static String swap(String word, int a, int b) {
+		char[] ch = word.toCharArray();
+		char temp = ch[a];
+		ch[a] = ch[b];
+		ch[b] = temp;
+		return String.valueOf(ch);
+	}
+}
