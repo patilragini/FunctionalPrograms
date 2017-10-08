@@ -9,7 +9,7 @@ public class Utility {
 	 * @param String
 	 *            name
 	 * @return void
-	 * 
+	 * <p> Display entered name and appends strings
 	 */
 	public static void printUsername(String name) {
 		System.out.println("  Hello " + name + ",How are you?");
@@ -23,6 +23,7 @@ public class Utility {
 	 * @return void
 	 * @param integer
 	 *            number
+*<p>calculates  head tail and percentage of each
 	 */
 	public static void flipCoin(int number) {
 		// math.random() returns value between 0.0 and 1
@@ -50,7 +51,7 @@ public class Utility {
 	 * @param integer
 	 *            year
 	 * @return boolean
-	 *         <p>
+	 *         <p> accepts year and return
 	 *         true -> if leap year
 	 *         <p>
 	 *         false -> not leap year
@@ -71,6 +72,7 @@ public class Utility {
 	 *         prints 2^n upto n times
 	 */
 	public static void powerOfTwo(int number) {
+		//loop
 		for (int i = 0; i <= number; i++) {
 			System.out.print(i);
 			System.out.print("\t" + (int) (Math.pow(2, i)));
@@ -83,6 +85,7 @@ public class Utility {
 	 * @param integer
 	 *            num
 	 * @return
+	 * <p>diaplay harmonic series of int and returns sum
 	 */
 	public static double harmonic(int num) {
 		float i = 2;
@@ -159,10 +162,11 @@ public class Utility {
 	/**
 	 * @param integer
 	 *            nRandoms
-	 *            <p>
-	 *            prints nRandoms unique numbers
+	 *            
 	 * @author ragini
 	 * @return void
+	*		<p>
+	 *            prints nRandoms unique numbers
 	 */
 	public static void getcpn(int nRandoms) {
 		int randomCount = 1, randomNo, flag = 0, index = 1;
@@ -320,11 +324,10 @@ public class Utility {
 	 * @param no
 	 *            parameter
 	 * @return return long start Time
-	 *
+	 *<p> returns start time 
 	 */
 
-	public static long startStopWatch() {
-		// TODO Auto-generated method stub
+	public static long startStopWatch() {		
 		startTime = System.currentTimeMillis();
 		return startTime;
 	}
@@ -420,11 +423,11 @@ public class Utility {
 	 * @return String
 	 * <p>takes word ,start length ,end length
 	 */
-	public static String swap(String word, int a, int b) {
-		char[] ch = word.toCharArray();
-		char temp = ch[a];
-		ch[a] = ch[b];
-		ch[b] = temp;
-		return String.valueOf(ch);
+	public static String swap(String word, int start, int end) {
+		char[] charArray = word.toCharArray();
+		char temp = charArray [start];
+		charArray [start] = charArray [end];
+		charArray [end] = temp;
+		return String.valueOf(charArray);
 	}
 }

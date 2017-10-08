@@ -2,7 +2,7 @@
  *  @author  Ragini Patil
  *  @version 1.0
  *  @since   01-09-2017
- *
+ *@purpose: accpets n number and find combination  such that 3 number sum equals to 0
  ******************************************************************************/
 package com.bridgelabz.programs;
 

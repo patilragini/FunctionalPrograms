@@ -2,7 +2,7 @@
  *  @author  Ragini Patil
  *  @version 1.0
  *  @since   1-09-2017
- *
+ *@purpose: generate 2D array of integer double boolean by generic and display 2D array
  ******************************************************************************/
 package com.bridgelabz.programs;
 

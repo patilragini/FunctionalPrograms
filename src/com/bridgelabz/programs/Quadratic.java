@@ -16,6 +16,7 @@ public class Quadratic {
 	
 	public static void main(String args[]) {
 		Scanner scanner = new Scanner(System.in);
+		//a,b,c are numbers
 		int a,b,c;
 		System.out.println("Give values for quadratic equation a*x^2 +b*x +c");
 		System.out.println("Enter a: b: c:");
